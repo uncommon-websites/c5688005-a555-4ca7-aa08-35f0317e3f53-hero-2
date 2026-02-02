@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F4F5F7;
+        }
+        .custom-dash {
+            letter-spacing: -2px;
+            margin: 0 2px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+    <!-- Navigation -->
+    <header class="w-full px-6 py-6 md:px-10 md:py-8">
+        <nav class="flex justify-between items-center max-w-[1800px] mx-auto">
+            <!-- Left: Logo & Tagline -->
+            <div class="flex items-center gap-5">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-1.5 h-5 bg-black"></div>
+                    <span class="text-xl font-bold tracking-tight text-black">ADAPTIVE</span>
+                </div>
+                <span class="text-sm text-gray-500 font-normal hidden sm:block">Continuous AI infrastructure</span>
+            </div>
+
+            <!-- Center: Links -->
+            <div class="hidden md:flex items-center gap-10 text-[15px] text-[#475569] font-normal">
+                <a href="#" class="hover:text-black transition-colors flex items-center gap-1">
+                    For ML teams <span class="text-lg leading-none ml-0.5 font-light">+</span>
+                </a>
+                <a href="#" class="hover:text-black transition-colors">Open source</a>
+            </div>
+
+            <!-- Right: Auth -->
+            <div class="flex items-center gap-6 text-[15px]">
+                <a href="#" class="text-gray-600 hover:text-black transition-colors">Log in</a>
+                <a href="#" class="bg-black text-white px-5 py-2.5 rounded hover:bg-gray-800 transition-colors font-medium text-sm">Sign up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col justify-end px-6 md:px-10 pb-10 w-full max-w-[1800px] mx-auto mt-20 md:mt-32 lg:mt-40">
+        
+        <!-- Hero Text Section -->
+        <div class="flex flex-col lg:flex-row justify-between items-end gap-12 lg:gap-20 mb-24 md:mb-32">
+            <!-- Headline -->
+            <h1 class="text-5xl md:text-7xl lg:text-[5.25rem] leading-[0.95] tracking-tight font-medium text-black max-w-5xl">
+                Continuous learning for production AI teams
+            </h1>
+            
+            <!-- Subtext -->
+            <div class="lg:mb-3 max-w-[460px]">
+                <p class="text-lg md:text-[1.15rem] leading-relaxed text-gray-500 font-normal">
+                    Evolve your models with real-world data patterns in real-time. Replace manual retraining with adaptive algorithms that learn from experience.
+                </p>
+            </div>
+        </div>
+
+        <!-- Action Bar -->
+        <div class="flex flex-col md:flex-row justify-between items-end md:items-center w-full gap-8">
+            <!-- Left: CTA -->
+            <div class="flex items-center gap-5 w-full md:w-auto">
+                <button class="bg-black text-white px-7 py-3.5 rounded text-[15px] font-medium hover:bg-gray-800 transition-colors whitespace-nowrap">
+                    View GitHub
+                </button>
+                <p class="text-xs text-gray-500 leading-tight">
+                    Available for <br>
+                    ML engineers
+                </p>
+            </div>
+
+            <!-- Right: Block Info -->
+            <div class="text-xs text-gray-500 uppercase tracking-wide font-normal">
+                SCALING TO 100K MODELS
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bottom Image -->
+    <div class="w-full h-[35vh] md:h-[45vh] mt-4">
+        <img src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/c5688005-a555-4ca7-aa08-35f0317e3f53/hero-2-img-0-1770068990815.png" alt="Abstract Green Background" class="w-full h-full object-cover object-top">
+    </div>
+
+</body>
+</html>
